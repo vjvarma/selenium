@@ -1,0 +1,8 @@
+#linkText as a locator for Services Element
+ServiceS=Services
+
+#linkText as a locator for Consulting Element
+ConsultinG=Consulting
+
+#id as locator for searchBtn Element
+SearchBtn=searchBtnbi

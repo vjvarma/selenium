@@ -1,0 +1,3 @@
+Feature:test NewTours Appliction
+Scenario:test Login with valid credentials
+Given Open firefox and start aplication

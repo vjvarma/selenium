@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45692" started-at="2017-08-22T21:15:07Z" finished-at="2017-08-22T21:15:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45692" started-at="2017-08-22T21:15:07Z" finished-at="2017-08-22T21:15:53Z">
+      <class name="practice.ActionLink">
+        <test-method status="PASS" signature="OpenWebDriver()[pri:0, instance:practice.ActionLink@4520ebad]" name="OpenWebDriver" is-config="true" duration-ms="31154" started-at="2017-08-22T16:15:07Z" finished-at="2017-08-22T16:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenWebDriver -->
+        <test-method status="PASS" signature="RunTest()[pri:0, instance:practice.ActionLink@4520ebad]" name="RunTest" duration-ms="1539" started-at="2017-08-22T16:15:38Z" finished-at="2017-08-22T16:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:practice.ActionLink@4520ebad]" name="TearDown" is-config="true" duration-ms="12980" started-at="2017-08-22T16:15:40Z" finished-at="2017-08-22T16:15:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- practice.ActionLink -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

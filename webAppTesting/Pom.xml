@@ -1,0 +1,10 @@
+<suite name="pom">
+ <test name="on automation">
+  
+    <classes>
+      <class name="grid.Automation"/>
+    </classes>
+  
+  </test> 
+
+</suite>

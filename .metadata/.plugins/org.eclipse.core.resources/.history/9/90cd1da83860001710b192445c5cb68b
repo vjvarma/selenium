@@ -1,0 +1,19 @@
+package webAppTesting;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FireFoxGmail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+FirefoxDriver driver=new FirefoxDriver();
+driver.get("http://google.com");
+driver.findElementByLinkText("Gmail").click();
+driver.findElementByXPath("html/body/nav/div/a[2]").click();
+driver.findElement(By.id("email")).sendKeys("kvvarma2008");
+
+	}
+
+}

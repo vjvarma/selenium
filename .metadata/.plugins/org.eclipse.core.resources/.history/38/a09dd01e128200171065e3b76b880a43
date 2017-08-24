@@ -1,0 +1,15 @@
+package webAppTesting;
+
+import java.io.IOException;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Gmail {
+	 public static void main(String[] args) throws IOException{
+		 
+		 System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		 ChromeDriver driver=new ChromeDriver();
+		 driver.get("https://accounts.google.com/SignUp?service=mail&continue=https://mail.google.com/mail/?pc=topnav-about-en");
+	
+	 }
+}
