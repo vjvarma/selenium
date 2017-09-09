@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNG.GRID">
+      <class name="testNG.Dbtesting">
         <methods>
-          <include name="FaceBookingApplLaunch"/>
+          <include name="SetUp"/>
+          <include name="dbTest"/>
         </methods>
-      </class> <!-- testNG.GRID -->
+      </class> <!-- testNG.Dbtesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

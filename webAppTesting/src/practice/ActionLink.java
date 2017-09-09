@@ -1,6 +1,9 @@
 package practice;
 
+import java.io.FileInputStream;
 
+import java.io.IOException;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,11 +22,14 @@ public void OpenWebDriver(){
 	driver.manage().window().maximize();
 	}
 	@Test
-public void RunTest(){
-	WebElement Services=driver.findElement(By.linkText("Services"));
-	Actions act= new Actions(driver);
+public void RunTest() throws IOException{
+	FileInputStream file=new FileInputStream("C:\\Users\\vijay\\Desktop\\WorkSelenium\\webAppTesting\\file2.properties");
+		Properties pr=new Properties();
+	pr.load(file);
+			WebElement Services=driver.findElement(By.linkText("Services"));
+	Actions act=new Actions(driver);
 	act.moveToElement(Services).perform();
-	driver.findElement(By.linkText("Consulting")).click();
+	driver.findElement(By.linkText(pr.getProperty("ConsultinG"))).click();
 	
 	}
 	@AfterTest

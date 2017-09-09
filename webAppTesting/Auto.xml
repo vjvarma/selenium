@@ -1,0 +1,20 @@
+<suite name="Auto" parallel="tests">
+ <test name="on firefox">
+<parameter name="Browser" value="firefox"/>   
+    <classes>
+      <class name="practice.Grid"/>
+    </classes>
+  
+  </test> 
+
+<test name="on chrome">
+    <parameter name="Browser" value="chrome"/> 
+    <classes> 
+      
+      <class name="practice.Grid">
+    
+     </class>
+   
+    </classes>
+  </test> 
+</suite>

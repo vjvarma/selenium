@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45692" started-at="2017-08-22T21:15:07Z" finished-at="2017-08-22T21:15:53Z">
+  <suite name="Default suite" duration-ms="16343" started-at="2017-09-09T00:05:21Z" finished-at="2017-09-09T00:05:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45692" started-at="2017-08-22T21:15:07Z" finished-at="2017-08-22T21:15:53Z">
-      <class name="practice.ActionLink">
-        <test-method status="PASS" signature="OpenWebDriver()[pri:0, instance:practice.ActionLink@4520ebad]" name="OpenWebDriver" is-config="true" duration-ms="31154" started-at="2017-08-22T16:15:07Z" finished-at="2017-08-22T16:15:38Z">
+    <test name="Default test" duration-ms="16343" started-at="2017-09-09T00:05:21Z" finished-at="2017-09-09T00:05:37Z">
+      <class name="testNG.Dbtesting">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:testNG.Dbtesting@62ee68d8]" name="SetUp" is-config="true" duration-ms="9775" started-at="2017-09-08T19:05:21Z" finished-at="2017-09-08T19:05:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenWebDriver -->
-        <test-method status="PASS" signature="RunTest()[pri:0, instance:practice.ActionLink@4520ebad]" name="RunTest" duration-ms="1539" started-at="2017-08-22T16:15:38Z" finished-at="2017-08-22T16:15:40Z">
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="dbTest()[pri:0, instance:testNG.Dbtesting@62ee68d8]" name="dbTest" duration-ms="6523" started-at="2017-09-08T19:05:31Z" finished-at="2017-09-08T19:05:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RunTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:practice.ActionLink@4520ebad]" name="TearDown" is-config="true" duration-ms="12980" started-at="2017-08-22T16:15:40Z" finished-at="2017-08-22T16:15:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- practice.ActionLink -->
+        </test-method> <!-- dbTest -->
+      </class> <!-- testNG.Dbtesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

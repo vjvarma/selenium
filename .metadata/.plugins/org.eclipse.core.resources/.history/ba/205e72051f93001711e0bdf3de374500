@@ -1,0 +1,80 @@
+package testNG;
+
+import java.io.FileInputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.Properties;
+
+import org.eclipse.jdt.internal.compiler.ast.WhileStatement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Dbtesting {
+FirefoxDriver driver;
+@BeforeTest
+public void SetUp()
+{
+	driver=new FirefoxDriver();
+	driver.get("https://login.yahoo.com/account/create?src=ym&intl=us&lang=en-US&done=https%3A%2F%2Fmail.yahoo.com&specId=yidReg");
+	driver.manage().window().maximize();
+}
+@Test
+
+public void dbTest(){}
+Connection conn=null;
+String url="jdbc:mysql://localhost:3306/mysql";
+String dbname="vj";
+String DbDriver="com.mysql.jdbc.Driver";
+String userName="root";
+String password="qwerty";
+class.forName(DbDriver).newInstance();
+conn=DriverManager.getConnection(url+dbName,userName
+		,password);
+PreparedStatement psmt=conn.prepareStatement("select *from register");
+ResultSet rs =psmt.executeQuery();
+FileInputStream fileProperties=new FileInputStream("C:\\Users\\vijay\\Desktop\\WorkSelenium\\webAppTesting\\Yahoo.properties");
+Properties pr=new Properties();
+pr.load(fileProperties);
+while(rs.next())
+{
+	driver.findElement(By.id(pr.getProperty("FirstName"))).sendKeys(rs.getString(1));
+	driver.findElement(By.id(pr.getProperty("LastName"))).sendKeys(rs.getString(2));
+	driver.findElement(By.id(pr.getProperty("UserName"))).sendKeys(rs.getString(3));
+	driver.findElement(By.id(pr.getProperty("Password"))).sendKeys(rs.getString(4));
+	double d=rs.getString(5));
+	long L=(long)d;
+	String S=Long.toString(L);
+	driver.findElement(By.id(pr.getProperty("PhoneNumber"))).sendKeys(S);
+	driver.findElement(By.id(pr.getProperty("BirthMonth"))).sendKeys(rs.getString(6));
+	double d1=rs.getString(7);
+	long L1=(long)d1;
+	String S1=Long.toString(L1);
+	driver.findElement(By.id(pr.getProperty("BirthDay"))).sendKeys(S1);
+	
+	long L2=(long)rs.getString(8))
+	String S2=Long.toString(L2);
+	driver.findElement(By.id(pr.getProperty("BirthYear"))).sendKeys(S2);
+	driver.findElement(By.id(pr.getProperty("Gender"))).sendKeys(rs.getString(9));
+	//driver.findElement(By.id("reg-submit-button")).click();	
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -15,7 +15,7 @@ driver.findElementByLinkText("Gmail").click();
 driver.findElementByXPath("html/body/nav/div/a[2]").click();
 driver.findElementByXPath("html/body/div[1]/div[1]/div[2]/div[2]/form/div[2]/div/div[1]/div[1]/div/div[1]/div/div[1]/input").sendKeys("kvvarma2008");
 driver.manage().window().maximize();
-driver.getCurrentUrl();
+System.out.println(driver.getCurrentUrl());
 System.out.println(driver.getTitle()); 
 
 driver.close();

@@ -24,5 +24,6 @@
 	<classpathentry kind="lib" path="C:/Users/vijay/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/Cucumber Jar Files/Cucumber Jar Files/gherkin-2.12.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vijay/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/Cucumber Jar Files/Cucumber Jar Files/junit-4.11.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vijay/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/Cucumber Jar Files/Cucumber Jar Files/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vijay/Desktop/mysql-connector.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

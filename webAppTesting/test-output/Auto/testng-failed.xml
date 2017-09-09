@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Auto]" parallel="tests">
+  <parameter name="Browser" value="chrome"/>
+  <test name="on firefox(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="practice.Grid">
+        <methods>
+          <include name="application" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- practice.Grid -->
+    </classes>
+  </test> <!-- on firefox(failed) -->
+  <test name="on chrome(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="practice.Grid">
+        <methods>
+          <include name="application" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- practice.Grid -->
+    </classes>
+  </test> <!-- on chrome(failed) -->
+</suite> <!-- Failed suite [Auto] -->

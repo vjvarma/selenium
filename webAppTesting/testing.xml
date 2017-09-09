@@ -3,18 +3,13 @@
 <parameter name="Browser" value="firefox"/>   
     <classes>
       <class name="grid.FacebookTesting"/>
-    </classes>
-  
+    </classes> 
   </test> 
-
 <test name="on chrome">
     <parameter name="Browser" value="chrome"/> 
-    <classes> 
-      
-      <class name="grid.FacebookTesting">
-    
-     </class>
-   
+ <classes> 
+<class name="grid.FacebookTesting">
+ </class>
     </classes>
   </test> 
 </suite>

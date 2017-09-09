@@ -10,21 +10,19 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.server.browserlaunchers.Sleeper;
-
+ 
 public class Gmail {
 	 public static void main(String[] args) throws IOException{
 		 
-		 System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		 ChromeDriver driver=new ChromeDriver();
-		 driver.get("https://accounts.google.com/SignUp?service=mail&continue=https://mail.google.com/mail/?pc=topnav-about-en");
-		driver.manage().window().maximize();	
-		 FileInputStream file=new FileInputStream("C:\\Users\\vijay\\Desktop\\TEST.xlsx");
+		 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		 	ChromeDriver driver=new ChromeDriver();
+		 	driver.get("https://accounts.google.com/SignUp?service=mail&continue=https://mail.google.com/mail/?pc=topnav-about-en");
+		 	driver.manage().window().maximize();	
+		 	FileInputStream file=new FileInputStream("C:\\Users\\vijay\\Desktop\\TEST.xlsx");
 			XSSFWorkbook wb=new XSSFWorkbook(file);
 			XSSFSheet ws=wb.getSheet("Sheet1");
 			for(int i=1;i<=ws.getLastRowNum();i++){
-				Row r=ws.getRow(i);
-			     	     
-				
+			Row r=ws.getRow(i);
 				driver.findElement(By.name("FirstName")).sendKeys(r.getCell(0).getStringCellValue());
 				driver.findElement(By.name("LastName")).sendKeys(r.getCell(1).getStringCellValue());	 
 				driver.findElement(By.name("GmailAddress")).sendKeys(r.getCell(2).getStringCellValue());	 

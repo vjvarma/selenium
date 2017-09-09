@@ -14,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class DataExl {
 public static void main(String[] args) throws IOException
 {
+	
 	FirefoxDriver driver = new FirefoxDriver();
 	  driver.get("http://newtours.demoaut.com");
 	  driver.manage().window().maximize();

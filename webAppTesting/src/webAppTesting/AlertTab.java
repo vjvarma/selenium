@@ -29,7 +29,6 @@ public class AlertTab {
 	driver.findElement(By.id(pr.getProperty("SearchBtn"))).click();
 		 
  Alert alt=driver.switchTo().alert();
- 
  System.out.println(alt.getText());
  Sleeper.sleepTightInSeconds(10);
  alt.accept();
